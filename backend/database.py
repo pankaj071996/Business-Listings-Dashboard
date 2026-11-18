@@ -33,7 +33,21 @@ database_url = URL.create(
     database=os.environ["DB_NAME"],
 )
 
-engine = create_engine(database_url, pool_pre_ping=True)
+ca_path = os.getenv("DB_CA_CERT_PATH")
+connect_args = {}
+if ca_path:
+    connect_args = {
+        "ssl_verify_cert": True,
+        "ssl_verify_identity": True,
+        "ssl_ca": ca_path,
+    }
+
+engine = create_engine(
+    database_url,
+    connect_args=connect_args,
+    pool_pre_ping=True,
+    pool_recycle=300,
+)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
 Base = declarative_base()
 
