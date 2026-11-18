@@ -14,7 +14,7 @@ import {
 
 import "./App.css";
 
-const API = "http://127.0.0.1:8000";
+const API = "https://business-listings-dashboard-zzye.onrender.com";
 
 const COLORS = [
   "#3976ed", "#8b5cf6", "#06a6a6", "#f59e0b",
