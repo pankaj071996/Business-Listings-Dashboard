@@ -1,5 +1,15 @@
 # BizInsights – Business Listings Dashboard
 
+## 🚀 Live Demo
+
+**Live Dashboard:** https://business-listings-dashboard-lac.vercel.app/
+
+**Backend API:** https://business-listings-dashboard-zzye.onrender.com
+
+**API Documentation:** https://business-listings-dashboard-zzye.onrender.com/docs
+
+**GitHub Repository:** https://github.com/pankaj071996/Business-Listings-Dashboard
+
 A full-stack Business Listings Dashboard built to manage, explore, and analyze business listing data across multiple cities and categories.
 
 ## Project Overview
